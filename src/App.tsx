@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import { TextField } from './TextField';
+import PersonScoreForm from './PersonScoreForm';
 
 const App: React.FC = () => {
 
@@ -11,10 +12,14 @@ setBool(!bool)
 }
 
 
+
+
   return (
   <div>
     <TextField text='hello i am props' subtext={33} istrue={bool}
     fn={handleClick}/>
+    <PersonScoreForm/>
+
   </div>
   )
 }
